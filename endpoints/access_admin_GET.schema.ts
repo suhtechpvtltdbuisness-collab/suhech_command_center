@@ -1,0 +1,1 @@
+export async function getAccessAdmin(){const r=await fetch('/_api/access_admin');if(!r.ok)throw new Error('Unable to load account access');return r.json()}

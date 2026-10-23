@@ -1,0 +1,1 @@
+export async function postPayroll(body:any){const r=await fetch('/_api/payroll_manage',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});if(!r.ok)throw new Error((await r.json().catch(()=>({}))).error||'Payroll action failed');return r.json()}

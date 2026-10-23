@@ -1,0 +1,1 @@
+export async function postCompanyLedger(body:any){const r=await fetch('/_api/company_ledger_manage',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)}),x=await r.json();if(!r.ok)throw new Error(x.error||'Ledger update failed');return x}

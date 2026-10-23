@@ -1,0 +1,1 @@
+export async function postSalesManage(input:any){const r=await fetch('/_api/sales_manage',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(input)});if(!r.ok)throw new Error('Unable to save sales record');return r.json()}

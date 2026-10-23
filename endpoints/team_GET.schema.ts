@@ -1,0 +1,1 @@
+export async function getTeam(){const r=await fetch('/_api/team');if(!r.ok)throw new Error('Unable to load team');return r.json()}

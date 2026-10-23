@@ -1,0 +1,1 @@
+export async function postPettyCash(input:any){const r=await fetch('/_api/petty_cash',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(input)});const j=await r.json();if(!r.ok)throw Error(j.error||'Unable to save');return j;}

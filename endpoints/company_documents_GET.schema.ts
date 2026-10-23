@@ -1,0 +1,1 @@
+export async function getCompanyDocuments(){const r=await fetch('/_api/company_documents');if(!r.ok)throw new Error('Unable to load documents');return r.json()}

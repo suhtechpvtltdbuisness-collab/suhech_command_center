@@ -1,0 +1,1 @@
+export async function postManagementNotification(body:any){const r=await fetch('/_api/management_notification',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const x=await r.json();if(!r.ok)throw new Error(x.error||'Notification failed');return x}

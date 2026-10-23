@@ -1,0 +1,32 @@
+{
+  "eodUpdate": {
+    "enabled": true,
+    "schedule": "45 17 * * 1-6",
+    "timezone": "Asia/Kolkata",
+    "allowOverlap": false
+  },
+  "checkAlerts": {
+    "enabled": true,
+    "schedule": "*/15 * * * *",
+    "timezone": "Asia/Kolkata",
+    "allowOverlap": false
+  },
+  "directorDigest": {
+    "enabled": true,
+    "schedule": "0 9,19 * * *",
+    "timezone": "Asia/Kolkata",
+    "allowOverlap": false
+  },
+  "hrPolicyEngine": {
+    "enabled": true,
+    "schedule": "0 11 * * *",
+    "timezone": "Asia/Kolkata",
+    "allowOverlap": false
+  },
+  "directorActionEngine": {
+    "enabled": true,
+    "schedule": "*/30 * * * *",
+    "timezone": "Asia/Kolkata",
+    "allowOverlap": false
+  }
+}

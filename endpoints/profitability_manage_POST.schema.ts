@@ -1,0 +1,1 @@
+export async function postProfitability(body:any){const r=await fetch('/_api/profitability_manage',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const d=await r.json().catch(()=>({}));if(!r.ok)throw new Error(d.error||'Profitability action failed');return d}

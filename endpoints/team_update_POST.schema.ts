@@ -1,0 +1,1 @@
+export async function postTeamUpdate(input:any){const r=await fetch('/_api/team_update',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(input)});const data=await r.json().catch(()=>({}));if(!r.ok)throw new Error(data.error||'Unable to update employee');return data}

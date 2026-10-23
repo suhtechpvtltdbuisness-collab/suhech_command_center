@@ -1,0 +1,1 @@
+export async function postFinanceManage(input:any){const r=await fetch('/_api/finance_manage',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(input)});if(!r.ok)throw new Error('Unable to save finance record');return r.json()}

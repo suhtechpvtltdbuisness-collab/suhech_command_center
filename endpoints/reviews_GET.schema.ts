@@ -1,0 +1,1 @@
+export async function getReviews(){const r=await fetch('/_api/reviews');if(!r.ok)throw new Error('Unable to load reviews');return r.json()}

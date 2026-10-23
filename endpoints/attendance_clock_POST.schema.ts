@@ -1,0 +1,1 @@
+export async function postAttendanceClock(body:{action:'check_in'|'check_out';workMode?:string}){const r=await fetch('/_api/attendance_clock',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});const x=await r.json();if(!r.ok)throw new Error(x.error||'Attendance failed');return x}

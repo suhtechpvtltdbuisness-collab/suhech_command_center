@@ -1,0 +1,1 @@
+export async function postProjectManage(input:any){const r=await fetch('/_api/project_manage',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(input)});if(!r.ok){let message='Unable to save project work';try{const body=await r.json();if(body?.error)message=body.error}catch{}throw new Error(message)}return r.json()}

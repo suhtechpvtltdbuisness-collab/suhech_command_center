@@ -1,0 +1,1 @@
+import {z} from 'zod'; export const PostManageInput=z.record(z.string(),z.any()); export type PostManageOutput={row:any}; export async function postManage(input:any):Promise<PostManageOutput>{const r=await fetch('/_api/manage',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(input)});if(!r.ok)throw new Error('Unable to save');return r.json()}

@@ -1,0 +1,3 @@
+import { db } from './db';
+import { getServerUserSession } from './getServerUserSession';
+export async function getEmployeeAccess(request:Request){const {user}=await getServerUserSession(request);const employee=await db.selectFrom('employees').selectAll().where('userId','=',user.id).executeTakeFirst();const level=user.role==='admin'?'director':(employee?.accessLevel||'employee');return {user,employee,level};}

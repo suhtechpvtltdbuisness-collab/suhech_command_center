@@ -1,0 +1,1 @@
+export async function postAccessAdmin(input:any){const r=await fetch('/_api/access_admin',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(input)});const j=await r.json();if(!r.ok)throw new Error(j.error||'Unable to update access');return j}

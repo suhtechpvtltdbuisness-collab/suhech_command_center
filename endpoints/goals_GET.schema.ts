@@ -1,0 +1,1 @@
+export async function getGoals(){const r=await fetch('/_api/goals');if(!r.ok)throw new Error('Unable to load goals');return r.json()}

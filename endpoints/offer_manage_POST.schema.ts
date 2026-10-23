@@ -1,0 +1,1 @@
+export async function postOffer(body:any){const r=await fetch('/_api/offer_manage',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});if(!r.ok)throw new Error((await r.json().catch(()=>({}))).error||'Offer action failed');return r.json()}

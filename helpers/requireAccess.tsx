@@ -1,0 +1,2 @@
+import{getEmployeeAccess}from'./getEmployeeAccess';
+export async function requireAccess(request:Request,allowed:('director'|'manager'|'employee')[]){try{const access=await getEmployeeAccess(request);if(!allowed.includes(access.level as any))return{error:Response.json({error:'Forbidden'},{status:403})};return{access}}catch{return{error:Response.json({error:'Authentication required'},{status:401})}}}

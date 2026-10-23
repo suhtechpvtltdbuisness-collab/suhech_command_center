@@ -1,0 +1,1 @@
+export async function getProjects(){const r=await fetch('/_api/projects');if(!r.ok)throw new Error('Unable to load projects');return r.json()}

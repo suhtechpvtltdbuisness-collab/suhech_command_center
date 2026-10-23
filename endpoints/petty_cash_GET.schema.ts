@@ -1,0 +1,1 @@
+export async function getPettyCash(){const r=await fetch('/_api/petty_cash');const j=await r.json();if(!r.ok)throw Error(j.error||'Unable to load petty cash');return j;}

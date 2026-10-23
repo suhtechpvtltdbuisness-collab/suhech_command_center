@@ -1,0 +1,1 @@
+export async function postDirectorAction(body:any){const r=await fetch('/_api/director_actions_manage',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const d=await r.json().catch(()=>({}));if(!r.ok)throw new Error(d.error||'Action failed');return d}

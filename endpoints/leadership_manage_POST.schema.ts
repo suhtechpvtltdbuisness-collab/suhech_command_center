@@ -1,0 +1,1 @@
+export async function postLeadership(body:any){const r=await fetch('/_api/leadership_manage',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});if(!r.ok)throw new Error((await r.json()).error||'Unable to save assessment');return r.json()}

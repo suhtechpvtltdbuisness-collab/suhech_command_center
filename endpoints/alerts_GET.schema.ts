@@ -1,0 +1,1 @@
+export async function getAlerts(){const r=await fetch('/_api/alerts');if(!r.ok)throw new Error('Unable to load alerts');return r.json()}

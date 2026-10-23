@@ -1,0 +1,1 @@
+export async function postSelfAttendance(input:{mode:'check_in'|'check_out';status?:'present'|'wfh';notes?:string}){const r=await fetch('/_api/self_attendance',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(input)});const data=await r.json().catch(()=>({}));if(!r.ok)throw new Error(data.error||'Unable to mark attendance');return data}

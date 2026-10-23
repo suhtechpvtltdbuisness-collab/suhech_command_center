@@ -1,0 +1,1 @@
+export async function postReview(body:any){const r=await fetch('/_api/review_manage',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});if(!r.ok)throw new Error((await r.json()).error||'Unable to save review');return r.json()}

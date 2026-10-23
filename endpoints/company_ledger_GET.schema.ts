@@ -1,0 +1,1 @@
+export async function getCompanyLedger(){const r=await fetch('/_api/company_ledger'),x=await r.json();if(!r.ok)throw new Error(x.error||'Ledger unavailable');return x}

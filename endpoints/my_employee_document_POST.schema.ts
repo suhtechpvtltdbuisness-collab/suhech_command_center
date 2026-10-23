@@ -1,0 +1,1 @@
+export async function postMyEmployeeDocument(body:any){const r=await fetch('/_api/my_employee_document',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)}),x=await r.json();if(!r.ok)throw new Error(x.error||'Document could not be saved');return x}

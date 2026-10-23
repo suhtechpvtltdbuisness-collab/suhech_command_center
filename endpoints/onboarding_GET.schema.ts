@@ -1,0 +1,1 @@
+export async function getOnboarding(){const r=await fetch('/_api/onboarding');if(!r.ok)throw new Error('Unable to load onboarding');return r.json()}

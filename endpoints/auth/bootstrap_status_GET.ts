@@ -1,0 +1,1 @@
+import{db}from'../../helpers/db';export const handle=async()=>{const r=await db.selectFrom('users').select(({fn})=>fn.count<number>('id').as('count')).executeTakeFirst();return Response.json({needsBootstrap:Number(r?.count||0)===0})};

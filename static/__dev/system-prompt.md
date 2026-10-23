@@ -1,0 +1,1 @@
+make it working dashboard of this, so i can put names and work assignment, department assign, meeting reminder, work done reminder, as work completed performance tracker and completion report, target achievement with all required things completed. and all much needed to control the company progress and work in one place

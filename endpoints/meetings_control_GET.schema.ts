@@ -1,0 +1,1 @@
+export async function getMeetingsControl(){const r=await fetch('/_api/meetings_control');if(!r.ok)throw new Error('Unable to load meetings');return r.json()}

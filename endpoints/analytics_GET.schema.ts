@@ -1,0 +1,1 @@
+export async function getAnalytics(){const r=await fetch('/_api/analytics');if(!r.ok)throw new Error('Analytics load failed');return r.json()}

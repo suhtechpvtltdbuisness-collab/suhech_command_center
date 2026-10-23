@@ -1,0 +1,1 @@
+export async function getOffers(){const r=await fetch('/_api/offers');if(!r.ok)throw new Error('Unable to load offers');return r.json()}

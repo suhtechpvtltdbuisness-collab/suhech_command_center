@@ -1,0 +1,1 @@
+export async function postSettings(body:any){const r=await fetch('/_api/settings_manage',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const d=await r.json().catch(()=>({}));if(!r.ok)throw new Error(d.error||'Settings update failed');return d}

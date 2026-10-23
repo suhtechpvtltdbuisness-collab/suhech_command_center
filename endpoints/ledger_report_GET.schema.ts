@@ -1,0 +1,1 @@
+export async function getLedgerReport(from='',to=''){const q=new URLSearchParams();if(from)q.set('from',from);if(to)q.set('to',to);const r=await fetch('/_api/ledger_report?'+q),x=await r.json();if(!r.ok)throw new Error(x.error||'Report unavailable');return x}

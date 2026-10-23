@@ -1,0 +1,1 @@
+export async function getProfitability(){const r=await fetch('/_api/profitability');if(!r.ok)throw new Error('Unable to load profitability');return r.json()}

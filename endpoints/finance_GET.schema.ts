@@ -1,0 +1,1 @@
+export async function getFinance(){const r=await fetch('/_api/finance');if(!r.ok)throw new Error('Unable to load finance');return r.json()}

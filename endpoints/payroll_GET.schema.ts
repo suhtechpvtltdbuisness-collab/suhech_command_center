@@ -1,0 +1,1 @@
+export async function getPayroll(){const r=await fetch('/_api/payroll');if(!r.ok)throw new Error('Unable to load payroll');return r.json()}

@@ -1,0 +1,1 @@
+export async function requestEmployeeDocumentUpload(body:any){const r=await fetch('/_api/employee_document_upload',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)}),x=await r.json();if(!r.ok)throw new Error(x.error||'Upload could not start');return x}

@@ -1,0 +1,1 @@
+export async function postMyAcceptance(body:any){const r=await fetch('/_api/my_acceptance',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();if(!r.ok)throw new Error(j.error||'Acceptance failed');return j}

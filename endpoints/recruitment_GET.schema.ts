@@ -1,0 +1,1 @@
+export async function getRecruitment(){const r=await fetch('/_api/recruitment');if(!r.ok)throw new Error('Unable to load recruitment');return r.json()}

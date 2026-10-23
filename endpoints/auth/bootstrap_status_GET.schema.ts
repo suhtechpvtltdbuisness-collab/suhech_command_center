@@ -1,0 +1,1 @@
+export async function getBootstrapStatus(){const r=await fetch('/_api/auth/bootstrap_status');if(!r.ok)throw new Error('Unable to check account setup');return r.json() as Promise<{needsBootstrap:boolean}>}

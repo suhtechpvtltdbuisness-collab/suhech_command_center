@@ -1,0 +1,1 @@
+export async function getDirectorBrief(){const r=await fetch('/_api/director_brief');if(!r.ok)throw new Error('Unable to load Director brief');return r.json()}

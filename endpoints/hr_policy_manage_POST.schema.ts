@@ -1,0 +1,1 @@
+export async function postHrPolicy(body:any){const r=await fetch('/_api/hr_policy_manage',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});if(!r.ok)throw new Error('HR policy action failed');return r.json()}

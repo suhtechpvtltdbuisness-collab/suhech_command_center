@@ -1,0 +1,1 @@
+export async function postPettyCashFund(input:any){const r=await fetch('/_api/petty_cash_fund',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(input)});const j=await r.json();if(!r.ok)throw Error(j.error||'Unable to add funds');return j;}

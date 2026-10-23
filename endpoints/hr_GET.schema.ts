@@ -1,0 +1,1 @@
+export async function getHR(){const r=await fetch('/_api/hr');if(!r.ok)throw new Error('Unable to load HR');return r.json()}

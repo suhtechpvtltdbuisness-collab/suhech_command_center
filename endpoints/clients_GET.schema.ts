@@ -1,0 +1,1 @@
+export async function getClients(){const r=await fetch('/_api/clients');if(!r.ok)throw new Error('Unable to load clients');return r.json()}

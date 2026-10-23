@@ -1,0 +1,1 @@
+export async function reconcileBankPayments(){const r=await fetch('/_api/bank_reconcile',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action:'reconcile'})}),x=await r.json();if(!r.ok)throw new Error(x.error||'Reconciliation failed');return x}

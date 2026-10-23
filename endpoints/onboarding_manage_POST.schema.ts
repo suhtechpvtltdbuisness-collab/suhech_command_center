@@ -1,0 +1,1 @@
+export async function postOnboarding(body:any){const r=await fetch('/_api/onboarding_manage',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const x=await r.json();if(!r.ok)throw new Error(x.error||'Onboarding action failed');return x}

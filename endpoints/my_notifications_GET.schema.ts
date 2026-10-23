@@ -1,0 +1,1 @@
+export async function getMyNotifications(){const r=await fetch('/_api/my_notifications');const x=await r.json();if(!r.ok)throw new Error(x.error||'Unable to load notifications');return x}

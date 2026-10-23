@@ -1,0 +1,1 @@
+export async function getLeadership(){const r=await fetch('/_api/leadership');if(!r.ok)throw new Error('Unable to load leadership pipeline');return r.json()}

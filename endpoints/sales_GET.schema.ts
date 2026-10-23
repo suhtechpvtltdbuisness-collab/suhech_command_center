@@ -1,0 +1,1 @@
+export async function getSales(){const r=await fetch('/_api/sales');if(!r.ok)throw new Error('Unable to load sales');return r.json()}

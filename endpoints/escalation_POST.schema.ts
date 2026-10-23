@@ -1,0 +1,1 @@
+export async function postEscalation(body:any){const r=await fetch('/_api/escalation',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});if(!r.ok)throw new Error((await r.json().catch(()=>({}))).error||'Escalation failed');return r.json()}

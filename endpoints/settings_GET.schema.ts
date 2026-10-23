@@ -1,0 +1,1 @@
+export async function getSettings(){const r=await fetch('/_api/settings');if(!r.ok)throw new Error('Unable to load settings');return r.json()}

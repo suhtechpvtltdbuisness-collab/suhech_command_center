@@ -1,0 +1,1 @@
+export async function getManagerControl(){const r=await fetch('/_api/manager_control');if(!r.ok)throw new Error((await r.json().catch(()=>({}))).error||'Unable to load manager control');return r.json()}

@@ -1,0 +1,1 @@
+export async function getMyAcceptances(){const r=await fetch('/_api/my_acceptances');if(!r.ok)throw new Error('Unable to load documents');return r.json()}

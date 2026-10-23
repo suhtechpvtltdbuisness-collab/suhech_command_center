@@ -1,0 +1,1 @@
+export async function getDailyUpdates(){const r=await fetch('/_api/daily_updates');if(!r.ok)throw new Error('Unable to load daily updates');return r.json()}

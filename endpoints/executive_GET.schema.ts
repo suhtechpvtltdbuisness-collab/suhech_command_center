@@ -1,0 +1,1 @@
+export async function getExecutive(){const r=await fetch('/_api/executive');if(!r.ok)throw new Error('Unable to load executive view');return r.json()}

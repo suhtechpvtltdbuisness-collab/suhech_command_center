@@ -1,0 +1,1 @@
+export async function postHrAdmin(body:any){const r=await fetch('/_api/hr_admin_manage',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});if(!r.ok)throw new Error((await r.json().catch(()=>({}))).error||'HR action failed');return r.json()}

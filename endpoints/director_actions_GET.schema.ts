@@ -1,0 +1,1 @@
+export async function getDirectorActions(){const r=await fetch('/_api/director_actions');if(!r.ok)throw new Error('Unable to load Director actions');return r.json()}

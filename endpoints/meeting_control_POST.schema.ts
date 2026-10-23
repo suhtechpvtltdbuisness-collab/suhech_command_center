@@ -1,0 +1,1 @@
+export async function postMeetingControl(input:any){const r=await fetch('/_api/meeting_control',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(input)});if(!r.ok)throw new Error('Unable to save meeting');return r.json()}

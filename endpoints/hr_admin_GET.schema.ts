@@ -1,0 +1,1 @@
+export async function getHrAdmin(){const r=await fetch('/_api/hr_admin');if(!r.ok)throw new Error('Unable to load HR administration');return r.json()}

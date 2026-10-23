@@ -1,0 +1,1 @@
+import{handle as clock}from'./attendance_clock_POST';export async function handle(request:Request){const b=await request.json();return clock(new Request(request.url,{method:'POST',headers:request.headers,body:JSON.stringify({action:b.mode,workMode:b.status==='wfh'?'wfh':'office'})}))}

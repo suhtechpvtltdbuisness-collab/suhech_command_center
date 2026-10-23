@@ -1,0 +1,4 @@
+import { z } from 'zod';
+export const PostWorkInput = z.object({ title:z.string().min(1), ownerId:z.number(), departmentId:z.number().nullable().optional(), deliverable:z.string().optional(), successCriteria:z.string().optional(), dueAt:z.string().optional(), priority:z.enum(['low','medium','high','critical']).optional() });
+export type PostWorkOutput = { task:any };
+export async function postWork(input:z.infer<typeof PostWorkInput>):Promise<PostWorkOutput>{ const r=await fetch('/_api/work',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(input)}); if(!r.ok) throw new Error('Unable to create work'); return r.json(); }

@@ -1,0 +1,1 @@
+export async function getPerformance(){const r=await fetch('/_api/performance');if(!r.ok)throw new Error('Performance load failed');return r.json()}

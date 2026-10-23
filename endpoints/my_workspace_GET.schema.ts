@@ -1,0 +1,1 @@
+export async function getMyWorkspace(){const r=await fetch('/_api/my_workspace');if(!r.ok)throw new Error('Unable to load workspace');return r.json()}

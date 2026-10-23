@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Overlay layers */
+  --z-overlay: 400;
+
+  --z-spotlight: 1000; /* Tutorial spotlights/guided help */
+
+  /* System layers */
+  --z-critical: 2000; /* Critical system notifications */
+
+  /* spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+}
+
+:root {
+  --background: #f4f5fb; --foreground: #17182b;
+  --surface: #eef0f9; --surface-foreground: #17182b; --sidebar: #17152f; --sidebar-foreground: #f7f6ff; --card: #fbfbfe; --card-foreground: #17182b; --popup: #ffffff; --popup-foreground: #17182b;
+  --primary: #5b45e8; --primary-foreground: #ffffff; --secondary: #e8e6fb; --secondary-foreground: #30276f; --accent: #755cf2; --accent-foreground: #ffffff; --muted: #e8eaf3; --muted-foreground: #686b7d;
+  --success: #16865b; --success-foreground: #ffffff; --error: #c4424a; --error-foreground: #ffffff; --warning: #b87816; --warning-foreground: #ffffff; --info: #3866c5; --info-foreground: #ffffff; --info-hover: #315bb0; --info-active: #294f9a;
+  --border: #dcddea;
+  --font-family-base: 'Manrope', sans-serif; --font-family-display: 'Bricolage Grotesque', sans-serif; --font-family-monospace: ui-monospace, monospace; --font-family-cursive: cursive;
+  --shadow: 0 1px 3px rgba(25,24,54,.07); --shadow-md: 0 8px 24px rgba(25,24,54,.09); --shadow-lg: 0 18px 50px rgba(25,24,54,.13); --shadow-focus: 0 0 0 3px rgba(91,69,232,.22);
+  --radius-sm: 6px; --radius: 10px; --radius-md: 14px; --radius-lg: 20px; --radius-full: 999px;
+  --animation-duration-fast: 120ms; --animation-duration-normal: 220ms; --animation-duration-slow: 380ms;
+  --chart-color-1: #5b45e8; --chart-color-2: #16865b; --chart-color-3: #b87816; --chart-color-4: #3866c5; --chart-color-5: #9a58c7;
+}
+.dark {
+  --background: #11101f; --foreground: #f3f2fb; --surface: #19172b; --surface-foreground: #f3f2fb; --sidebar: #0d0c19; --sidebar-foreground: #f7f6ff; --card: #1d1b31; --card-foreground: #f3f2fb; --popup: #24213a; --popup-foreground: #f3f2fb;
+  --primary: #8875ff; --primary-foreground: #11101f; --secondary: #302b52; --secondary-foreground: #e6e1ff; --accent: #9a88ff; --accent-foreground: #11101f; --muted: #29263e; --muted-foreground: #aaa7bd;
+  --success: #4ec795; --success-foreground: #0e241c; --error: #f06e76; --error-foreground: #2c0e11; --warning: #e5a84c; --warning-foreground: #2b1b06; --info: #72a0f5; --info-foreground: #101c33; --info-hover: #83adf7; --info-active: #96b9fa; --border: #35324c;
+  --chart-color-1: #8875ff; --chart-color-2: #4ec795; --chart-color-3: #e5a84c; --chart-color-4: #72a0f5; --chart-color-5: #c182e5;
+}

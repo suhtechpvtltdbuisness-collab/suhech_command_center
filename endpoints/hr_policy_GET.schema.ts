@@ -1,0 +1,1 @@
+export async function getHrPolicy(){const r=await fetch('/_api/hr_policy');if(!r.ok)throw new Error('Unable to load HR policy');return r.json()}
